@@ -78,7 +78,7 @@ def main(argv):
     		else:
     			# dont have enought time to switch
     			sales = assumptions.getMaxProfitFromTrain(total_time-time_to_switch)
-    			t_end = t_next-datetime.timedelta(seconds=assumptions.T_bw_SameLineCars)
+    			t_end = t_next-timedelta(seconds=assumptions.T_bw_SameLineCars)
     	else:
     		if time_to_switch >= assumptions.T_bw_DifferentLine:
     			# have enough time to switch
